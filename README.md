@@ -2,6 +2,7 @@
 Train a Neural Network to classify the type of braincancer from MRI images.
 
 The data used for training is from following kaggle Project:
+
   https://www.kaggle.com/datasets/fernando2rad/brain-tumor-mri-images-44c
 
 <table>
@@ -44,3 +45,16 @@ The data used for training is from following kaggle Project:
   </tr>
 </table>
 
+# Using ResNet50V2 with weights from imagenet
+Using a pre-trained version of ResNet with the last 7 layers of the model made trainable. The 4D output is then average pooled with kernel size 4x4, flattended and densed into a output layer of size 15, corresponding to the 15 classes.
+
+<table>
+  <tr>
+    <th colspan="1" style="text-align: center">Accuracy through training epochs</th>
+    <th colspan="1" style="text-align: center">Confusion Matrix from Validation Datset</th>
+  </tr>
+  <tr>
+    <td><img src= https://github.com/user-attachments/assets/7ec8c9dc-3304-450c-82c7-19ab7c0f12f9 /></td>
+    <td><img src= https://github.com/user-attachments/assets/f756acf9-22ae-43f1-99e3-2cecd5ae1610 /></td>
+  </tr>
+</table>
