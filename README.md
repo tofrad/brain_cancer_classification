@@ -46,7 +46,7 @@ The data used for training is from following kaggle Project:
 </table>
 
 # Using ResNet50V2 with weights from imagenet
-Using a pre-trained version of ResNet with the last 7 layers of the model made trainable. The 4D output is then average pooled with kernel size 4x4, flattended and densed into a output layer of size 15, corresponding to the 15 classes.
+Using a pre-trained version of ResNet with the last 7 layers of the model made trainable. The 4D output is then average pooled with kernel size 4x4, flattened and densed into a output layer of size 15, corresponding to the 15 classes.
 
 <table>
   <tr>
